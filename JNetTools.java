@@ -1,12 +1,6 @@
 // COMPILE: javac JNetTools.java
 // RUN: java JNetTools
 
-// TODO
-// portScan(localIP, port, threads = 10, timeout = 0.5)
-// getOpenPorts(IP, portRangeStop = 65535, portRangeStart = 1, threads = 10, timeout = 1.5)
-// getOpenPortsFromList(IP, portList, threads = 10, timeout = 1.5)
-// hostScan(localIP, threads = 10, timeout = 0.5)
-
 import java.net.*;
 import java.io.*;
 import java.lang.*;
@@ -80,6 +74,7 @@ public class JNetTools {
     }
   }
 
+  // debug
   public static void main(String args[]) {
     System.out.println("Host 192.168.0.1:80 is: " + (isUp("192.168.0.1", 80) ? "up" : "down"));
   }
